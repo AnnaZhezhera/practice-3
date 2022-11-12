@@ -14,7 +14,7 @@ export const CountryInfo = ({
 }) => {
   return (
     <CountryWrapper key={id}>
-      <Flag>
+     <Flag>
         <Image src={flag} />
       </Flag>
       <CountryDescription>
@@ -22,7 +22,9 @@ export const CountryInfo = ({
           Capital: <Accent>{capital}</Accent>
         </CountryCapital>
 
-        <CountryTitle>{countryName}</CountryTitle>
+        <CountryTitle>
+          {countryName === 'Russian Federation' ? 'MORDOR' : countryName}
+        </CountryTitle>
 
         <CountryDetail>
           Population: <Accent>{population}</Accent>
