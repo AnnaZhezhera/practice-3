@@ -3,7 +3,6 @@ import { Country } from 'pages';
 import { Link, useLocation } from 'react-router-dom';
 
 export const CountryList = ({ countries }) => {
-  console.log(countries);
   const location = useLocation();
 
   return (
